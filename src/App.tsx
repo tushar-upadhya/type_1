@@ -1,7 +1,12 @@
 import "./App.css";
+import Box from "./components/Box";
 
 function App() {
-    return <>HI</>;
+    return (
+        <>
+            <Box />
+        </>
+    );
 }
 
 export default App;
