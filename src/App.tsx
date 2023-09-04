@@ -6,12 +6,16 @@ function App() {
     return (
         <>
             <Box
+                // children={<>child </>}
                 heading="tushar"
-                count="5"
+                // count="5"
                 func={(a: string) => {
                     alert(a);
                 }}
-            />
+            >
+                {/* {"children "} */}
+                <button>click</button>
+            </Box>
         </>
     );
 }
