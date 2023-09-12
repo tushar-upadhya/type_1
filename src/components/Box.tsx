@@ -2,11 +2,10 @@ import { ReactNode } from "react";
 
 type PropsType = {
     heading: string;
-    count?: string;
+    count?: string | number;
     children: ReactNode;
 
-    func?: (a: string) => void;
-};
+    func?: (a: string) => void};
 
 const Box = ({ heading, count = "8", func, children }: PropsType) => {
     // func("string");
