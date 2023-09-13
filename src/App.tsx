@@ -10,9 +10,9 @@ interface IPerson {
 }
 
 function App() {
-    // const [value, setValue] = useState<string>("");
+    const [value, setValue] = useState<string>("");
 
-    const [user, setUser] = useState<IPerson>();
+
 
     return (
         <>
@@ -28,19 +28,9 @@ function App() {
             {/* <button>click</button> */}
             {/* </Box > * /} */}
 
-            {/* <Generic label="tushar" value={value} setter={setValue} /> */}
+            <Generic label="tushar" value={value} setter={setValue} />
 
-            <form>
-                <input
-                    type="number"
-                    value={user?.age}
-                    onChange={(e) =>
-                        setUser((prev) => {
-                            return { ...prev!, age: e.target.value };
-                        })
-                    }
-                />
-            </form>
+         
         </>
     );
 }
